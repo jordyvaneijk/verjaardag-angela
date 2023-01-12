@@ -19,7 +19,7 @@
     <style>
       body {
         font-family: "Gloria Hallelujah", serif;
-        font-size: 48px;
+        font-size: 55px;
       }
     </style>
     <!-- Custom styles for this template -->
@@ -34,16 +34,16 @@
     <audio controls autoplay loop><source src="music/Happy-Birthday.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
-        <h1>Gefeliciteerd schat!</h1>
+        <p style="font-size: 68px;">Gefeliciteerd schat!</p>
       </header>
+      
       <main class="px-3" id="main">
         <div>
-          <h1>2023</h1>
+          <p style="font-size: 55px;">2023</p>
           <p class="lead">Dit jaar heb ik iets speciaals voor jou in petto.</p>
           <p class="lead">Ga maar even zitten en druk op de volgende knop</p>
           <p class="lead">
-            <a
-              href="#"
+            <button onclick="next();"
               class="btn btn-lg btn-light fw-bold border-white bg-white"
               >Klik hier!</a
             >
@@ -52,13 +52,93 @@
       </main>
       <main class="px-3" id="step1">
         <div>
-          <h1>11 januari</h1>
-          <p class="lead">De voorpret begint :)</p>
+          <p style="font-size: 55px;">11 januari 1990</p>
+          <p class="lead">Jouw avontuur begint...</p>
+          <p></p><img src="images/baby.jpg" style="width:100px;" /></p>
           <p class="lead">
-            <a
-              href="#"
+            <button onclick="next();"
               class="btn btn-lg btn-light fw-bold border-white bg-white"
               >Volgende</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step2">
+        <div>
+          <p style="font-size: 55px;">11 januari 2023</p>
+          <p class="lead">Hoera 33 jaar! De visite is er maar dan houdt het ook wel op...</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step3">
+        <div>
+          <p style="font-size: 55px;">14 januari 2023</p>
+          <p class="lead">Geleficiteerd schat, krijg je eindelijk je cadeautje... Klik nog maar even verder om te zien wat het is.</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step4">
+        <div>
+          <p style="font-size: 55px;">26 maart 2023</p>
+          <p class="lead">Dinertje op hoogte...</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step5">
+        <div>
+          <p style="font-size: 55px;">26 maart 2023</p>
+          <p class="lead">Euromast of toch iets anders...</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step6">
+        <div>
+          <p style="font-size: 55px;">25 t/m 30 maart 2023</p>
+          <p class="lead"><iframe width="560" height="315" src="https://www.youtube.com/embed/ThfY5-aY2PM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step7">
+        <div>
+          <p style="font-size: 55px;">25 t/m 30 maart 2023</p>
+          <p class="lead">Hotel: Double Tree By Hilton Times Square</p>
+          <p class="lead">Biketour: Central Park</p>
+          <p class="lead">Etentje: Top of the Rock Rockefeller Center (266m)</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Einde</a
             >
           </p>
         </div>

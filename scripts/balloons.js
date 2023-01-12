@@ -1,4 +1,12 @@
 const balloonContainer = document.getElementById("balloon-container");
+const mainContainer = document.getElementById("main");
+const step1Container = document.getElementById("step1");
+const step2Container = document.getElementById("step2");
+const step3Container = document.getElementById("step3");
+const step4Container = document.getElementById("step4");
+const step5Container = document.getElementById("step5");
+const step6Container = document.getElementById("step6");
+const step7Container = document.getElementById("step7");
 
 function random(num) {
   return Math.floor(Math.random() * num);
@@ -34,6 +42,40 @@ function removeBalloons() {
   setTimeout(() => {
     balloonContainer.remove()
   }, 500)
+}
+
+const steps = new Array(mainContainer,step1Container,step2Container,step3Container,step4Container,step5Container,step6Container,step7Container);
+
+
+let currentStep = 0;
+function next(){
+    steps[currentStep].style.display = "none";
+    steps[currentStep+1].style.display = "block";
+    currentStep++;
+    if(currentStep > steps.length){
+        currentStep=0;
+        steps[0].style.display = "block";
+    }
+}
+
+function step1(){
+    mainContainer.style.display = "none";
+    step1Container.style.display = "block";
+}
+
+function step2(){
+    step1Container.style.display = "none";
+    step2Container.style.display = "block";
+}
+
+function step3(){
+    step2Container.style.display = "none";
+    step3Container.style.display = "block";
+}
+
+function step4(){
+    step3Container.style.display = "none";
+    step4Container.style.display = "block";
 }
 
 // window.addEventListener("load", () => {

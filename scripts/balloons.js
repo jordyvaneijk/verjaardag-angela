@@ -1,4 +1,8 @@
 const balloonContainer = document.getElementById("balloon-container");
+
+const audioPlayer = document.getElementById("audioplayer");
+const videoPlayer = document.getElementById("videoplayer");
+
 const mainContainer = document.getElementById("main");
 const step1Container = document.getElementById("step1");
 const step2Container = document.getElementById("step2");
@@ -51,7 +55,7 @@ const steps = new Array(
   step3Container,
   step4Container,
   step5Container,
-  step6Container,
+  step6Container, //video
   step7Container
 );
 
@@ -60,40 +64,53 @@ let currentStep = 0;
 function next() {
   steps[currentStep].style.display = "none";
   currentStep++;
+  steps[currentStep].style.display = "block";
+  switch (currentStep) {
+    case 6:
+      pauseHappyBirthday();
+      playNewYork();
+      break;
 
-  if (currentStep >= steps.length) {
-    steps[currentStep].style.display = "none";
-    currentStep = 0;
-    steps[0].style.display = "block";
-  } else {
-    steps[currentStep].style.display = "block";
+    case 7:
+      stopNewYork();
+      playHappyBirthday();
+      break;
+
+    default:
+      break;
   }
 }
 
-function step1() {
-  mainContainer.style.display = "none";
-  step1Container.style.display = "block";
+function end() {
+  steps.forEach((element) => {
+    element.style.display = "none";
+  });
+  currentStep = 0;
+  steps[0].style.display = "block";
 }
 
-function step2() {
-  step1Container.style.display = "none";
-  step2Container.style.display = "block";
+function playNewYork() {
+  videoPlayer.muted = false;
+  videoPlayer.play();
 }
 
-function step3() {
-  step2Container.style.display = "none";
-  step3Container.style.display = "block";
+function stopNewYork() {
+  videoPlayer.pause();
 }
 
-function step4() {
-  step3Container.style.display = "none";
-  step4Container.style.display = "block";
+function playHappyBirthday() {
+  audioPlayer.muted = false;
+  //videoPlayer.load();
+  audioPlayer.play();
 }
 
-// window.addEventListener("load", () => {
-//   createBalloons(30)
-// });
+function pauseHappyBirthday() {
+  audioPlayer.pause();
+}
+window.addEventListener("load", () => {
+  audioPlayer.style.display = "none";
+});
 
-// window.addEventListener("click", () => {
-//   removeBalloons();
-// });
+window.addEventListener("click", () => {
+  playHappyBirthday();
+});

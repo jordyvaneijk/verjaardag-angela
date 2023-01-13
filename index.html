@@ -10,19 +10,7 @@
     />
     <meta name="generator" content="Hugo 0.108.0" />
     <title>Geleficiteerd schat!</title>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-    <style>
-      body {
-        font-family: "Gloria Hallelujah", serif;
-      }
-    </style>
-    <!-- Custom styles for this template -->
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/balloons.css" rel="stylesheet" />
     <link
@@ -45,11 +33,102 @@
         <div class="box">
           <p class="sub-header">2023</p>
           <p class="lead">Dit jaar heb ik iets speciaals voor jou in petto.</p>
-          <p class="lead">Ga maar even zitten en druk op de volgende knop</p>
+          <p class="lead">Ga maar even zitten en druk op de volgende knop.</p>
+          <p class="lead">
+            <button onclick="next();" class="btn btn-lg btn-light" style="font-size: 2vw; line-height: 2vw;">Klik hier!</button>
+          </p>
+        </div>
+      </main>
+      <main class="px-3" id="step1">
+        <div>
+          <p class="sub-header">11 januari 1990</p>
+          <p class="lead">Jouw avontuur begint...</p>
+          <p><img src="images/baby.jpg" style="width:100px;" alt="baby"/></p>
           <p class="lead">
             <button onclick="next();"
               class="btn btn-lg btn-light fw-bold border-white bg-white"
-              >Klik hier!</a
+              >Volgende</button
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step2">
+        <div>
+          <p class="sub-header">11 januari 2023</p>
+          <p class="lead">Hoera 33 jaar! De visite is er maar dan houdt het ook wel op...</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</button
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step3">
+        <div>
+          <p class="sub-header">14 januari 2023</p>
+          <p class="lead">Geleficiteerd schat, krijg je eindelijk je cadeautje... Klik nog maar even verder om te zien wat het is.</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</button
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step4">
+        <div>
+          <p class="sub-header">26 maart 2023</p>
+          <p class="lead">Dinertje op hoogte...</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</button
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step5">
+        <div>
+          <p class="sub-header">26 maart 2023</p>
+          <p class="lead">Euromast of toch iets anders...</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</button
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step6">
+        <div>
+          <p class="sub-header">25 t/m 30 maart 2023</p>
+          <p class="lead">
+            <video controls autoplay muted  width="840" height="473"><source src="videos/new-york.mp4" type="video/mp4">Your browser does not support the video tag.</video>          
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Volgende</button
+            >
+          </p>
+        </div>
+      </main>
+
+      <main class="px-3" id="step7">
+        <div>
+          <p class="sub-header">25 t/m 30 maart 2023</p>
+          <p class="lead">Hotel: Double Tree By Hilton Times Square</p>
+          <p class="lead">Biketour: Central Park</p>
+          <p class="lead">Etentje: Top of the Rock Rockefeller Center (266m)</p>
+          <p class="lead">
+            <button onclick="next();"
+              class="btn btn-lg btn-light fw-bold border-white bg-white"
+              >Einde</button
             >
           </p>
         </div>
@@ -66,7 +145,7 @@
       
       <main class="px-3" id="main">
         <div>
-          <p style="font-size: 55px;">2023</p>
+          <p class="sub-header">2023</p>
           <p class="lead">Dit jaar heb ik iets speciaals voor jou in petto.</p>
           <p class="lead">Ga maar even zitten en druk op de volgende knop</p>
           <p class="lead">
@@ -79,7 +158,7 @@
       </main>
       <main class="px-3" id="step1">
         <div>
-          <p style="font-size: 55px;">11 januari 1990</p>
+          <p class="sub-header">11 januari 1990</p>
           <p class="lead">Jouw avontuur begint...</p>
           <p></p><img src="images/baby.jpg" style="width:100px;" /></p>
           <p class="lead">
@@ -93,7 +172,7 @@
 
       <main class="px-3" id="step2">
         <div>
-          <p style="font-size: 55px;">11 januari 2023</p>
+          <p class="sub-header">11 januari 2023</p>
           <p class="lead">Hoera 33 jaar! De visite is er maar dan houdt het ook wel op...</p>
           <p class="lead">
             <button onclick="next();"
@@ -106,7 +185,7 @@
 
       <main class="px-3" id="step3">
         <div>
-          <p style="font-size: 55px;">14 januari 2023</p>
+          <p class="sub-header">14 januari 2023</p>
           <p class="lead">Geleficiteerd schat, krijg je eindelijk je cadeautje... Klik nog maar even verder om te zien wat het is.</p>
           <p class="lead">
             <button onclick="next();"
@@ -119,7 +198,7 @@
 
       <main class="px-3" id="step4">
         <div>
-          <p style="font-size: 55px;">26 maart 2023</p>
+          <p class="sub-header">26 maart 2023</p>
           <p class="lead">Dinertje op hoogte...</p>
           <p class="lead">
             <button onclick="next();"
@@ -132,7 +211,7 @@
 
       <main class="px-3" id="step5">
         <div>
-          <p style="font-size: 55px;">26 maart 2023</p>
+          <p class="sub-header">26 maart 2023</p>
           <p class="lead">Euromast of toch iets anders...</p>
           <p class="lead">
             <button onclick="next();"
@@ -145,7 +224,7 @@
 
       <main class="px-3" id="step6">
         <div>
-          <p style="font-size: 55px;">25 t/m 30 maart 2023</p>
+          <p class="sub-header">25 t/m 30 maart 2023</p>
           <p class="lead">
             <video controls autoplay muted  width="840" height="473"><source src="videos/new-york.mp4" type="video/mp4">Your browser does not support the video tag.</video>
             
@@ -161,7 +240,7 @@
 
       <main class="px-3" id="step7">
         <div>
-          <p style="font-size: 55px;">25 t/m 30 maart 2023</p>
+          <p class="sub-header">25 t/m 30 maart 2023</p>
           <p class="lead">Hotel: Double Tree By Hilton Times Square</p>
           <p class="lead">Biketour: Central Park</p>
           <p class="lead">Etentje: Top of the Rock Rockefeller Center (266m)</p>
